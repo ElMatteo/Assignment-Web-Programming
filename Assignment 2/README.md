@@ -24,7 +24,8 @@ alerting it)
 
 * 2 - The dynamic endpoint should use some function, which is exported
 
-
+![Alt text](public/images/siteScreenshott.png?raw=true "Screenshot of the site")
+    
 ## How to start the server ?
 
 ```bash
