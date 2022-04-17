@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test HTML file</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1 style="color: blueviolet; text-align: center;">This is the main HTML file</h1>
+    <p>Links : </p>
+    
+        <a href="/images/logo.png">UCI Logo</a><br><br>
+        <a href="/js/test.js">Test.js page</a><br><br>
+        <a href="/">Index page</a><br><br>
+        <a href="/api/1">API</a>
+    
+
+    <div style="margin: 0 auto;width: 13%;">
+        <h1>Form</h1>
+        <form id="form">
+            <label for="id">Function that will count from 1 to your number</label>
+            <input type="text" name="id" id="id" value="10">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <p id='to-insert' style="text-align: center;"></p>
+    <script>
+        const form = document.getElementById('form')
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            var data = document.getElementById('id').value;
+            fetch('/api/' + data).then(response => response.json()).then(data2 => {
+                document.getElementById('to-insert').innerHTML = "Here is the counter : " + data2['id'];
+            })
+        })
+
+    </script>
+
+    <img src="/images/logo.png" alt="UCI Logo" style="width: 20%; height: auto;">
+
+    <p>Here is some text to complete my HTML page</p>
+
+</div>
+</body>
+</html>
