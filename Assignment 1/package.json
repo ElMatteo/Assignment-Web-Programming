@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "r/place like project",
+  "main": "index.js",
+  "scripts": {
+    "launch": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElMatteo/projectWeb.git"
+  },
+  "author": "Clabassi, Matteo ; Arbey, Louis ; Martin, Theo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElMatteo/projectWeb/issues"
+  },
+  "homepage": "https://github.com/ElMatteo/projectWeb#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

@@ -1,6 +1,9 @@
-var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-consoleLogger("Clément, Matteo, Louis and Vincent",time)
-function consoleLogger(test,time){
-    console.log("This text has been logged in the web console by " + test + " at " + time)
+console.log("Starting index.js ...")
+let authors = "Louis, Matteo and Theo"
+let description = "UCI project of Advanced web programming. "
+
+stringGenerator(authors, description)
+
+function stringGenerator(authors, description) {
+    console.log("This project has been done by " + authors + ".\nThe description of the project is: " + description)
 }
