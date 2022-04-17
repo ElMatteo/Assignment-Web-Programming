@@ -1,17 +1,13 @@
-## projectWeb
-# Project of advanced web programming for University of California, Irvine
+## Assignement 1
+>This is the assignment 1. The grading rubric for this assignment is located below.
 
-The goal is to re create a r/place in our own way.
-[You can see an example by clicking here.](https://www.reddit.com/r/place/)
-
-_Users will be able to place a pixel on a web page every minute._
-
-The pixel can be :
-  * Blue
-  * White
-  * Yellow
-  * Gray
-  * Black
-  * etc...
-
-_**This page will be on a server then users can battle to create the biggest art on the page.**_
+* Github
+`* 2 - README file with required markdown syntax element (at least 3)`
+`* 1 - at least one commit for the repository with a clear comment describing the change made`
+`*1 - Clear description of project and what elements will be included`
+* 1- git repository with .gitignore that excludes "node_modlues" directory
+* package.json
+`*1 - I can run "npm run script" and see your string logged`
+* index.js
+`* 1 - when run, logs a string`
+`* 3 - I receive your GitHub URL so I can clone your files and successfully run your application`
