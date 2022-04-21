@@ -47,16 +47,16 @@ queries.sql
 ## How to import file in PostgreSql bash ?
 
 ```bash
-\i 'C:/Users/matte/Desktop/Cours/S6/Web programming/Assignment-Web-Programming/Assignment 3/sql/schema.sql'
+\i 'sql/schema.sql'
 ```
 Then
 
 ```bash
-\i 'C:/Users/matte/Desktop/Cours/S6/Web programming/Assignment-Web-Programming/Assignment 3/sql/seeds.sql'
+\i 'sql/seeds.sql'
 ```
 
 Then
 
 ```bash
-\i 'C:/Users/matte/Desktop/Cours/S6/Web programming/Assignment-Web-Programming/Assignment 3/sql/queries.sql'
+\i 'sql/queries.sql'
 ```
