@@ -10,6 +10,6 @@ INSERT INTO passenger (idPassenger, namePassenger, idTrain) VALUES (2, 'BIDEN Jo
 INSERT INTO passenger (idPassenger, namePassenger, idTrain) VALUES (3, 'MACRON Emmanuel',2);
 
 INSERT INTO price (idTrain, price, cat) VALUES (1,50,'Premium');
-INSERT INTO price (idTrain, price, cat) VALUES (1,80,'Regulaur');
+INSERT INTO price (idTrain, price, cat) VALUES (1,80,'Regular');
 INSERT INTO price (idTrain, price, cat) VALUES (2,40,'Premium');
 INSERT INTO price (idTrain, price, cat) VALUES (2,70,'Regular');
