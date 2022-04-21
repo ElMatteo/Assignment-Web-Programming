@@ -43,3 +43,20 @@ queries.sql
 1 - the file contains at least four SELECT queries
 1 - at least two of those queries JOIN multiple tables together
 1 - no more than one query selects "*", and the selections for the remaining query make sense (eg. a query that selects a book's number of pages and its author's middle name would not be sensical)
+
+## How to import file in PostgreSql bash ?
+
+```bash
+\i 'C:/Users/matte/Desktop/Cours/S6/Web programming/Assignment-Web-Programming/Assignment 3/sql/schema.sql'
+```
+Then
+
+```bash
+\i 'C:/Users/matte/Desktop/Cours/S6/Web programming/Assignment-Web-Programming/Assignment 3/sql/seeds.sql'
+```
+
+Then
+
+```bash
+\i 'C:/Users/matte/Desktop/Cours/S6/Web programming/Assignment-Web-Programming/Assignment 3/sql/queries.sql'
+```
