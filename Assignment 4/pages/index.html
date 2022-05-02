@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1 style="color: blueviolet; text-align: center;">This is the main HTML file</h1>
+    <p>Links : </p>
+    
+        <a href="/images/logo.png">UCI Logo</a><br><br>
+        <a href="/js/index.js">Test.js page</a><br><br>
+        <a href="/">Index page</a><br><br>
+        <a href="/api/1">API</a>
+    
+
+    <div style="margin: 0 auto;width: 13%;">
+        <h1>Form</h1>
+        <form id="form">
+            <label for="id">Function that will count from 1 to your number</label>
+            <input type="text" name="id" id="id" value="10">
+            <button type="submit">Submit</button>
+        </form>
+        <p id='to-insert' style="text-align: center;"></p>
+        <div class="ins" style="margin-top: 50px; margin-bottom: 50px;">
+            <h2>INSERT QUERY</h2>
+            <form id="insert" action ="/insert" method="POST">
+                <label for="first">Enter city</label><br>
+                <input type="text" name="city" id="cit"><br>
+                <label for="email">Enter ZIP</label><br>
+                <input type="text" name="zipcode" id="zip"><br>
+                <label for="last">Enter state</label>
+                <input type="text" name="state" id="sta"><br><br>
+                <button type="submit">Insert</button>
+            </form>
+        </div>
+        <div class="ret" style="margin-top: 50px; margin-bottom: 50px;">
+            <h2>SELECT QUERY</h2>
+            <form id="retrievel" method="POST" action="/retrieval">
+                <label for="first">Enter city to search</label>
+                <input type="text" name="cityRet" id="first"><br>
+                <button type="submit">Retrieval</button>
+            </form>
+        </div>
+        <div class="ins" style="margin-top: 50px; margin-bottom: 50px;">
+            <h2>UPDATE QUERY</h2>
+            <form id="Updating" action="/update" method="POST">
+                <label for="first">Enter City to select</label>
+                <input type="text" name="cityUp" id="first"><br>
+                <label for="email">Enter zipcode to update</label>
+                <input type="number" name="zipcodeUp" id="email"><br>
+                <label for="last">Enter state to update</label>
+                <input type="text" name="stateUp" id="last"><br><br>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+        <div class="del" style="margin-top: 50px; margin-bottom: 50px;">
+            <h2>DELETE QUERY</h2>
+            <form id="Deleting" method="POST" action="/delete">
+                <label for="first">Enter ID to delete</label>
+                <input type="text" name="id" id="first"><br>
+                <button type="submit">Deleting</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <script>
+        const form = document.getElementById('form')
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            var data = document.getElementById('id').value;
+            fetch('/api/' + data).then(response => response.json()).then(data2 => {
+                document.getElementById('to-insert').innerHTML = "Here is the counter : " + data2['id'];
+            })
+        })
+    </script>
+
+    <img src="/images/logo.png" alt="UCI Logo" style="width: 20%; height: auto;">
+
+    <p>Here is some text to complete my HTML page</p>
+
+</div>
+</body>
+</html>

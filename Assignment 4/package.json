@@ -1,0 +1,30 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "migrate": "npx knex migrate:latest --knexfile db/knexfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElMatteo/Assignment-Web-Programming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElMatteo/Assignment-Web-Programming/issues"
+  },
+  "homepage": "https://github.com/ElMatteo/Assignment-Web-Programming#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "knex": "^2.0.0",
+    "pg": "^8.7.3",
+    "requirements": "^1.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

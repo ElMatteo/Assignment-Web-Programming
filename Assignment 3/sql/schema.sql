@@ -2,7 +2,7 @@ CREATE DATABASE mydb;
 \c mydb
 CREATE SCHEMA schem;
 CREATE TABLE city (
-   idCity  int NOT NULL,
+   idCity SERIAL NOT NULL,
    nameCity  varchar(255) DEFAULT NULL,
    zipCity  int DEFAULT NULL,
    stateCity  varchar(255) DEFAULT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE city (
 );
 
 CREATE TABLE train  (
-   idTrain  int NOT NULL,
+   idTrain SERIAL NOT NULL,
    dateDep  DATE DEFAULT NULL,
    idCityDep  int DEFAULT NULL,
    idCityArr  int DEFAULT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE train  (
 );
 
 CREATE TABLE passenger  (
-   idPassenger  int NOT NULL,
+   idPassenger SERIAL NOT NULL,
    namePassenger  varchar(255) DEFAULT NULL,
    idTrain  int DEFAULT NULL,
   PRIMARY KEY ( idPassenger ),
